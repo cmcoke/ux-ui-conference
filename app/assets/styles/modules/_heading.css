@@ -1,0 +1,16 @@
+.heading{
+  text-transform: uppercase;
+  color: $black;
+  font-family: $font-archivo;
+  margin-top: 0px;
+
+  &--small{
+    color: $nickel;
+    font-family: $font-source-sans;
+    margin-bottom: 0px;
+  }
+
+  &--footer{
+    font-size: 1rem;
+  }
+}

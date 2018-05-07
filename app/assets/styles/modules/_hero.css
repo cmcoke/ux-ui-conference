@@ -1,0 +1,124 @@
+.hero{
+  position: relative;
+
+
+  &__text-content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+    @mixin atSmall{
+      top:50%;
+    }
+
+    @mixin atMedium{
+      top:70%;
+      text-align: left;
+    }
+
+    @mixin atLarge{
+      top:70%;
+      text-align: left;
+    }
+
+    @mixin atExLarge{
+      top:70%;
+      text-align: left;
+    }
+
+  }
+
+  &__small-title{
+    text-transform: uppercase;
+    font-family: $font-oswald;
+    margin-bottom: 0.4375rem;
+    margin-top: 0.4375rem;
+
+    @mixin atSmall{
+      font-size: 1.25rem;
+    }
+
+    @mixin atMedium{
+      font-size: 1.25rem;
+    }
+
+    @mixin atLarge{
+      font-size: 1.25rem;
+    }
+
+    @mixin atExLarge{
+      font-size: 1.5625rem;
+    }
+  }
+
+  &__large-title{
+    text-transform: uppercase;
+    font-family: $font-lato;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    @mixin atSmall{
+      font-size: 2.75rem;
+    }
+
+    @mixin atMedium{
+      font-size: 3.125rem;
+    }
+
+    @mixin atLarge{
+      font-size: 3.125rem;
+    }
+
+    @mixin atExLarge{
+      font-size: 5rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

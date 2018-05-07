@@ -1777,3 +1777,164 @@ a{
         height: 600px
 }
     }
+.page-section{
+  padding: 2rem 0;
+}
+.heading{
+  text-transform: uppercase;
+  color: #0D0D0D;
+  font-family: 'Archivo Black', sans-serif;
+  margin-top: 0px;
+}
+.heading--small{
+    color: #6F6F6F;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+  }
+.heading--footer{
+    font-size: 1rem;
+  }
+.generic-content{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.65;
+  font-size: 19px;
+  font-weight: 300;
+
+}
+.hero{
+  position: relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.hero__text-content{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.hero__text-content{
+      top:50%
+
+  }
+  }
+@media(min-width:768px) and (max-width: 991px){
+.hero__text-content{
+      top:70%;
+      text-align: left
+
+  }
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.hero__text-content{
+      top:70%;
+      text-align: left
+
+  }
+  }
+@media(min-width:1281px){
+.hero__text-content{
+      top:70%;
+      text-align: left
+
+  }
+  }
+.hero__small-title{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0.4375rem;
+    margin-top: 0.4375rem;
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.hero__small-title{
+      font-size: 1.25rem
+  }
+  }
+@media(min-width:768px) and (max-width: 991px){
+.hero__small-title{
+      font-size: 1.25rem
+  }
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.hero__small-title{
+      font-size: 1.25rem
+  }
+  }
+@media(min-width:1281px){
+.hero__small-title{
+      font-size: 1.5625rem
+  }
+  }
+.hero__large-title{
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.hero__large-title{
+      font-size: 2.75rem
+  }
+  }
+@media(min-width:768px) and (max-width: 991px){
+.hero__large-title{
+      font-size: 3.125rem
+  }
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.hero__large-title{
+      font-size: 3.125rem
+  }
+  }
+@media(min-width:1281px){
+.hero__large-title{
+      font-size: 5rem
+  }
+  }
