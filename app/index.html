@@ -12,12 +12,664 @@
 
 <body>
 
-  
+  <!-- SITE HEADER -->
+  <header class="site-header">
+
+    <div class="container">
+
+      <div class="site-header__logo">
+        <h1>Designers United</h1>
+      </div>
+
+      <nav>
+        <ul class="site-nav">
+          <li><a href="#home" id="home-link">Home</a></li>
+          <li><a href="#about" id="about-link">About</a></li>
+          <li><a href="#speaker" id="speaker-link">Speakers</a></li>
+          <li><a href="#schedule" id="schedule-link">Schedule</a></li>
+          <li><a href="#location" id="location-link">Location</a></li>
+          <li><a href="#tickets" id="tickets-link">Tickets</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
 
 
+  <!-- MOBILE MENU TOOGLE -->
+  <div class="mobile-menu-button">
+    <div class="mobile-menu-button__hamburger"></div>
+  </div>
 
 
+  <!-- HERO -->
+  <section class="hero">
 
+    <picture>
+      <source srcset="assets/images/hero--desktop.jpg 1920w, assets/images/hero--desktop-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--tablet-landscape.jpg 1380w, assets/images/hero--tablet-landscape.jpg 2760w " media="(min-width: 1024px)">
+      <source srcset="assets/images/hero--tablet-portrait.jpg 990w, assets/images/hero--tablet-portrait.jpg 1980w " media="(min-width: 768px)">
+      <source srcset="assets/images/hero--mobile-landscape.jpg 990w, assets/images/hero--tablet-landscape-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <img src="assets/images/hero--mobile-portrait-hi-dpi.jpg" alt="a man presenting in front of a crowd" class="flex-img">
+    </picture>
+
+    <div class="hero__text-content">
+      <div class="container">
+        <p class="hero__small-tile">Designers United Presents</p>
+        <h1 class="hero__large-title">UX &#38; UI Design</h1>
+        <h1 class="hero__large-title">Conference 2018</h1>
+        <p class="hero__small-tile">13 Oct - 16 Oct 2018</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="page-section">
+    <div class="container">
+      <div class="grid">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img src="http://via.placeholder.com/550x400" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+          <h2 class="heading">About This Conference</h2>
+          <p class="generic-content">
+            Morbi eu lectus in tortor pellentesque bibendum nec sed nunc. Pellentesque fermentum, ex ut placerat pellentesque, mi purus tempor odio, sit amet vulputate nulla sapien vitae risus. Nam eu urna eu nisl lacinia commodo. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Proin scelerisque orci vel libero pulvinar egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse volutpat finibus turpis, ac
+            rhoncus nisl pretium in. Suspendisse vitae ipsum facilisis tortor tincidunt volutpat eget at ex. Suspendisse varius mauris arcu, at condimentum est tincidunt in.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Speakers -->
+  <section class="page-section">
+    <div class="container">
+      <h3 class="heading heading--small">Guest</h3>
+      <h2 class="heading">Speakers</h2>
+      <div class="grid">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 ">
+          <div class="speaker">
+            <picture>
+              <source srcset="assets/images/speaker-1--desktop.jpg 500w" media="(min-width: 1380px)">
+              <source srcset="assets/images/speaker-1--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+              <source srcset="assets/images/speaker-1--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+              <source srcset="assets/images/speaker-1--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+              <img class="lazyload flex-img" src="assets/images/speaker-1--mobile-portrait.jpg" alt="profile picture of a speaker">
+            </picture>
+            <div class="speaker__info">
+              <h3 class="speaker__name">Cody Mendoza</h3>
+              <p class="speaker__occupation">ux designer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 ">
+          <div class="speaker">
+            <picture>
+              <source srcset="assets/images/speaker-2--desktop.jpg 500w" media="(min-width: 1380px)">
+              <source srcset="assets/images/speaker-2--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+              <source srcset="assets/images/speaker-2--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+              <source srcset="assets/images/speaker-2--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+              <img class="lazyload flex-img" src="assets/images/speaker-2--mobile-portrait.jpg" alt="profile picture of a speaker">
+            </picture>
+            <div class="speaker__info">
+              <h3 class="speaker__name">Rose Cummings</h3>
+              <p class="speaker__occupation">ui designer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 ">
+          <div class="speaker">
+            <picture>
+              <source srcset="assets/images/speaker-3--desktop.jpg 500w" media="(min-width: 1380px)">
+              <source srcset="assets/images/speaker-3--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+              <source srcset="assets/images/speaker-3--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+              <source srcset="assets/images/speaker-3--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+              <img class="lazyload flex-img" src="assets/images/speaker-3--mobile-portrait.jpg" alt="profile picture of a speaker">
+            </picture>
+            <div class="speaker__info">
+              <h3 class="speaker__name">David Smith</h3>
+              <p class="speaker__occupation">ui artist</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 ">
+          <div class="speaker">
+            <picture>
+              <source srcset="assets/images/speaker-4--desktop.jpg 500w" media="(min-width: 1380px)">
+              <source srcset="assets/images/speaker-4--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+              <source srcset="assets/images/speaker-4--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+              <source srcset="assets/images/speaker-4--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+              <img class="lazyload flex-img" src="assets/images/speaker-4--mobile-portrait.jpg" alt="profile picture of a speaker">
+            </picture>
+            <div class="speaker__info">
+              <h3 class="speaker__name">Isabel Hammond</h3>
+              <p class="speaker__occupation">ux product manager</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 ">
+          <div class="speaker">
+            <picture>
+              <source srcset="assets/images/speaker-5--desktop.jpg 500w" media="(min-width: 1380px)">
+              <source srcset="assets/images/speaker-5--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+              <source srcset="assets/images/speaker-5--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+              <source srcset="assets/images/speaker-5--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+              <img class="lazyload flex-img" src="assets/images/speaker-5--mobile-portrait.jpg" alt="profile picture of a speaker">
+            </picture>
+            <div class="speaker__info">
+              <h3 class="speaker__name">Robert Kelly</h3>
+              <p class="speaker__occupation">digital designer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 ">
+          <div class="speaker">
+            <picture>
+              <source srcset="assets/images/speaker-6--desktop.jpg 500w" media="(min-width: 1380px)">
+              <source srcset="assets/images/speaker-6--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+              <source srcset="assets/images/speaker-6--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+              <source srcset="assets/images/speaker-6--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+              <img class="lazyload flex-img" src="assets/images/speaker-6--mobile-portrait.jpg" alt="profile picture of a speaker">
+            </picture>
+            <div class="speaker__info">
+              <h3 class="speaker__name">Kara Bowen</h3>
+              <p class="speaker__occupation">visual designer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Speakers Modal -->
+
+  <!-- Schedule -->
+  <section class="page-section">
+
+    <div class="container">
+
+      <h3 class="heading heading--small">Date &#38; Time</h3>
+      <h2 class="heading">Schedule</h2>
+
+      <ul class="schedule__tab-nav">
+
+        <li>
+          <a href="#day1">
+            <h3 class="schedule__day">Day <span>1</span></h3>
+            <p class="schedule__date"><span>13</span> October, 2018</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#day2">
+            <h3 class="schedule__day">Day <span>2</span></h3>
+            <p class="schedule__date"><span>14</span> October, 2018</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#day3">
+            <h3 class="schedule__day">Day <span>3</span></h3>
+            <p class="schedule__date"><span>15</span> October, 2018</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#day4">
+            <h3 class="schedule__day">Day <span>4</span></h3>
+            <p class="schedule__date"><span>16</span> October, 2018</p>
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Tab 1 -->
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img src="assets/images/schedule-1__speaker.jpg" alt="Speaker Cody Mendoza">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">9:00am - 10:30am</p>
+            <h2 class="schedule__title">Welcome &#38; Introduction </h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Cody Mendoza</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img src="assets/images/schedule-2__speaker.jpg" alt="Speaker Rose Cummings">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">10:30am - 11:30am</p>
+            <h2 class="schedule__title">What is UI &#38; UX Design&#63;</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Rose Cummings</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img src="assets/images/schedule-3__speaker.jpg" alt="Speaker David Smith">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">11:30am - 12:30am</p>
+            <h2 class="schedule__title">Brand Design</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: David Smith</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img src="assets/images/schedule-4__speaker.jpg" alt="Speaker Isabel Hammond">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">1:30pm - 2:30pm</p>
+            <h2 class="schedule__title">Print Design </h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Isabel Hammond</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img src="assets/images/schedule-5__speaker.jpg" alt="Speaker Robert Kelly">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">2:30pm - 3:30pm</p>
+            <h2 class="schedule__title">Color Theory</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Robert Kelly</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2 -->
+      <!-- <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-4__speaker.jpg 160w, assets/images/schedule-4__speaker-hi-dpi.jpg 320w" alt="Speaker Cody Mendoza">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">9:00am - 10:30am</p>
+            <h2 class="schedule__title">Print Design Part 2 </h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Isabel Hammond</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-6__speaker.jpg 160w, assets/images/schedule-6__speaker-hi-dpi.jpg 320w" alt="Speaker Rose Cummings">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">10:30am - 11:30am</p>
+            <h2 class="schedule__title">Visual Design</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Kara Bowen</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-1__speaker.jpg 160w, assets/images/schedule-1__speaker-hi-dpi.jpg 320w" alt="Speaker David Smith">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">11:30am - 12:30am</p>
+            <h2 class="schedule__title">Content Strategy</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Cody Mendoza</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-2__speaker.jpg 160w, assets/images/schedule-2__speaker-hi-dpi.jpg 320w" alt="Speaker Isabel Hammond">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">1:30pm - 2:30pm</p>
+            <h2 class="schedule__title">Web Design & Development</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Rose Cummings</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-3__speaker.jpg 160w, assets/images/schedule-3__speaker-hi-dpi.jpg 320w" alt="Speaker Isabel Hammond">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">2:30pm - 3:30pm</p>
+            <h2 class="schedule__title">Adaptive vs Responsive Design</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: David Smith</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Tab 3 -->
+      <!-- <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-6__speaker.jpg 160w, assets/images/schedule-6__speaker-hi-dpi.jpg 320w" alt="Speaker Cody Mendoza">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">9:00am - 10:30am</p>
+            <h2 class="schedule__title">Understanding UI Design Patterns</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Kara Bowen</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-5__speaker.jpg 160w, assets/images/schedule-5__speaker-hi-dpi.jpg 320w" alt="Speaker Rose Cummings">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">10:30am - 11:30am</p>
+            <h2 class="schedule__title">Using the Golden Ratio</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Robert Kelly</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-4__speaker.jpg 160w, assets/images/schedule-4__speaker-hi-dpi.jpg 320w" alt="Speaker David Smith">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">11:30am - 12:30am</p>
+            <h2 class="schedule__title">Introduction to Flat Design</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Isabel Hammond</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-3__speaker.jpg 160w, assets/images/schedule-3__speaker-hi-dpi.jpg 320w" alt="Speaker Isabel Hammond">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">1:30pm - 2:30pm</p>
+            <h2 class="schedule__title">Usability Testing</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: David Smith</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-2__speaker.jpg 160w, assets/images/schedule-2__speaker-hi-dpi.jpg 320w" alt="Speaker Isabel Hammond">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">2:30pm - 3:30pm</p>
+            <h2 class="schedule__title">The Future of UI/UX </h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Rose Cummings</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Tab 4 -->
+      <!-- <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-1__speaker.jpg 160w, assets/images/schedule-1__speaker-hi-dpi.jpg 320w" alt="Speaker Cody Mendoza">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">9:00am - 10:30am</p>
+            <h2 class="schedule__title">Understanding UI Design Patterns</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Cody Mendoza</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-2__speaker.jpg 160w, assets/images/schedule-2__speaker-hi-dpi.jpg 320w" alt="Speaker Rose Cummings">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">10:30am - 11:30am</p>
+            <h2 class="schedule__title">Using the Golden Ratio</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Rose Cummings</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-3__speaker.jpg 160w, assets/images/schedule-3__speaker-hi-dpi.jpg 320w" alt="Speaker David Smith">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">11:30am - 12:30am</p>
+            <h2 class="schedule__title">Introduction to Flat Design</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: David Smith</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-4__speaker.jpg 160w, assets/images/schedule-4__speaker-hi-dpi.jpg 320w" alt="Speaker Isabel Hammond">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">1:30pm - 2:30pm</p>
+            <h2 class="schedule__title">Usability Testing</h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Isabel Hammond</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule__container">
+        <div class="grid">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <img sizes="160px" srcset="assets/images/schedule-5__speaker.jpg 160w, assets/images/schedule-5__speaker-hi-dpi.jpg 320w" alt="Speaker Isabel Hammond">
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <p class="schedule__time">2:30pm - 3:30pm</p>
+            <h2 class="schedule__title">The Future of UI/UX </h2>
+            <p class="generic-content">
+              Fusce rutrum, nibh porttitor sagittis lobortis, eros diam tempor felis, id vulputate nibh turpis eget mi. Duis tempor ac velit et elementum. Sed id lacinia sem. Mauris rutrum tempus mauris eget scelerisque. Nam massa nibh, ultricies eget justo eu, gravida
+              vulputate sem. Curabitur finibus tortor libero
+            </p>
+            <p class="schedule_speaker">By: Robert Kelly</p>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="page-section">
+
+    <div class="container">
+      <h3 class="heading heading--small">Venue</h3>
+      <h2 class="heading">Location</h2>
+
+
+      <!-- GoogleMap.js -->
+      <div id="map"></div>
+
+      <div class="location__content">
+        <h3 class="heading heading__location">Los Angeles Convention Center</h3>
+        <p class="location__info"><span>Address:</span>1201 S Figueroa St Los Angeles, CA 90015, USA</p>
+        <p class="location__info"><span>Parking:</span>5,600 spaces</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticket -->
+  <section class="page-section">
+
+    <div class="container">
+      <h2 class="heading">Tickets</h2>
+
+      <div class="grid">
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="ticket">
+            <h4 class="heading heading--ticket-seat">Front Seat</h4>
+            <h1 class="ticket__price"><span class="ticket__dollar-sign">$</span>500</h1>
+            <p class="generic-content">Nulla vitae finibus ex. Donec tincidunt vestibulum sollicitudin. Quisque ligula felis, ornare eget viverra dictum, fermentum id est. Aenean gravida luctus bibendum. Aenean auctor luctus dolor nec pretium. </p>
+            <a class="btn btn--ticket" href="#">Purchase</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="ticket">
+            <h4 class="heading heading--ticket-seat">Middle Seat</h4>
+            <h1 class="ticket__price"><span class="ticket__dollar-sign">$</span>300</h1>
+            <p class="generic-content">Nulla vitae finibus ex. Donec tincidunt vestibulum sollicitudin. Quisque ligula felis, ornare eget viverra dictum, fermentum id est. Aenean gravida luctus bibendum. Aenean auctor luctus dolor nec pretium. </p>
+            <a class="btn btn--ticket" href="#">Purchase</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="ticket">
+            <h4 class="heading heading--ticket-seat">Back Seat</h4>
+            <h1 class="ticket__price"><span class="ticket__dollar-sign">$</span>100</h1>
+            <p class="generic-content">Nulla vitae finibus ex. Donec tincidunt vestibulum sollicitudin. Quisque ligula felis, ornare eget viverra dictum, fermentum id est. Aenean gravida luctus bibendum. Aenean auctor luctus dolor nec pretium. </p>
+            <a class="btn btn--ticket" href="#">Purchase</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid">
+
+        <div class="col-sm-12 col-md-4">
+          <h3 class="heading heading--footer">Contact Us</h3>
+          <p><span>Address:</span>1735 Vine St. Hollywood, CA 90028</p>
+          <p><span>Phone:</span>123-4567-8900</p>
+          <p><span>Email:</span>info@designers-utd</p>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <h3 class="heading heading--footer">Social Links</h3>
+          <a class="site-footer__social-links" href="#">Facebook</a>
+          <a class="site-footer__social-links" href="#">Twitter</a>
+          <a class="site-footer__social-links" href="#">Instagram</a>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <h3 class="heading heading--footer">Newsletter</h3>
+          <input type="text" class="site-footer__input-text">
+          <a class="btn btn--subscribe" href="#">Subscribe</a>
+        </div>
+
+
+      </div>
+      <p>Created by C.Coke 2018</p>
+    </div>
+  </footer>
 
   <!-- <script src="/temp/scripts/app.js" type="text/javascript"></script> -->
 </body>
