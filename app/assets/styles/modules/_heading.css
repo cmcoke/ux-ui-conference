@@ -10,6 +10,10 @@
     margin-bottom: 0px;
   }
 
+  &--about{
+    text-align: center;
+  }
+
   &--footer{
     font-size: 1rem;
   }

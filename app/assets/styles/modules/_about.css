@@ -1,0 +1,15 @@
+.about{
+
+  @mixin atExLarge{
+    margin-top: 1.875rem;
+  }
+
+  &__img{
+    @mixin atLarge{
+      margin-top: 4.375rem;
+    }
+  }
+
+
+
+}

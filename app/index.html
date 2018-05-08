@@ -12,7 +12,7 @@
 
 <body>
 
-  <!-- SITE HEADER -->
+  <!-- Site Header -->
   <header class="site-header">
 
     <div class="container">
@@ -37,13 +37,13 @@
   </header>
 
 
-  <!-- MOBILE MENU TOOGLE -->
+  <!-- Mobile Menu Toogle -->
   <div class="mobile-menu-button">
     <div class="mobile-menu-button__hamburger"></div>
   </div>
 
 
-  <!-- HERO -->
+  <!-- Hero -->
   <section class="hero">
 
     <picture>
@@ -66,24 +66,35 @@
   </section>
 
 
-  <!-- ABOUT -->
+  <!-- About -->
   <section class="page-section">
     <div class="container">
       <div class="grid">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="http://via.placeholder.com/550x400" alt="">
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <picture>
+            <source srcset="assets/images/about--desktop.png" media="(min-width: 1380px)">
+            <source srcset="assets/images/about--tablet-landscape.png 550w" media="(min-width: 1024px)">
+            <source srcset="assets/images/about--tablet-portrait.png 550w " media="(min-width: 768px)">
+            <source src="assets/images/about--mobile-landscape.png 600w" media="(min-width: 640px)">
+            <img src="assets/images/about--mobile-portrait.png" alt="come and join us message" class="flex-img about__img">
+          </picture>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-8">
-          <h2 class="heading">About This Conference</h2>
-          <p class="generic-content">
-            Morbi eu lectus in tortor pellentesque bibendum nec sed nunc. Pellentesque fermentum, ex ut placerat pellentesque, mi purus tempor odio, sit amet vulputate nulla sapien vitae risus. Nam eu urna eu nisl lacinia commodo. Pellentesque habitant morbi tristique
-            senectus et netus et malesuada fames ac turpis egestas. Proin scelerisque orci vel libero pulvinar egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse volutpat finibus turpis, ac
-            rhoncus nisl pretium in. Suspendisse vitae ipsum facilisis tortor tincidunt volutpat eget at ex. Suspendisse varius mauris arcu, at condimentum est tincidunt in.
-          </p>
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <div class="about">
+            <h2 class="heading heading--about">About This Conference</h2>
+            <p class="generic-content generic-content--about">
+              Morbi eu lectus in tortor pellentesque bibendum nec sed nunc. Pellentesque fermentum, ex ut placerat pellentesque, mi purus tempor odio, sit amet vulputate nulla sapien vitae risus. Nam eu urna eu nisl lacinia commodo. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Proin scelerisque orci vel libero pulvinar egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse volutpat finibus turpis,
+              ac rhoncus nisl pretium in. Suspendisse vitae ipsum facilisis tortor tincidunt volutpat eget at ex. Suspendisse varius mauris arcu, at condimentum est tincidunt in.
+            </p>
+            <p class="generic-content generic-content--about">Aenean aliquet leo felis. Etiam quis ullamcorper magna. Donec a iaculis est. Nam quis vestibulum mauris, vel egestas lectus. Aenean dignissim odio bibendum, efficitur dolor id, malesuada risus. Aliquam condimentum, neque eu rhoncus accumsan,
+              nisl nulla sodales mi, vel ornare massa nibh nec augue.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Guest Speakers -->
   <section class="page-section">

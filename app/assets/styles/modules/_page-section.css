@@ -1,3 +1,16 @@
 .page-section{
   padding: 2rem 0;
+
+  @mixin atMedium{
+    padding: 5rem 0;
+  }
+
+  @mixin atLarge{
+    padding: 5rem 0;
+  }
+
+  @mixin atExLarge{
+    padding: 5rem 0;
+  }
+
 }
