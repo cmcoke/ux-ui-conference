@@ -1,0 +1,48 @@
+.speaker{
+  position: relative;
+
+  &__background-image{
+    background: url('../../assets/images/speakers-bg.png');
+    min-height: 100%;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  &__name{
+    text-transform: uppercase;
+    font-family:$font-lato;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__occupation{
+    position: absolute;
+    bottom:9%;
+    width:50%;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 0.6875rem;
+    color: #555;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family:$font-lato;
+    font-size:1.125rem;
+    margin-top: 0;
+
+  }
+
+  &__modal-link{
+      transition: 250ms ease;
+  }
+
+  &__modal-link:visited{
+    color: black;
+
+  }
+
+  &__modal-link:hover{
+    color: $blue;
+  }
+
+
+}

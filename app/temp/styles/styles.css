@@ -1975,3 +1975,46 @@ a{
       margin-top: 4.375rem
   }
   }
+.speaker{
+  position: relative;
+
+
+}
+.speaker__background-image{
+    background: url('../../assets/images/speakers-bg.png');
+    min-height: 100%;
+    position: relative;
+    background-attachment: fixed;
+  }
+.speaker__name{
+    text-transform: uppercase;
+    font-family:'Lato', sans-serif;
+    margin-bottom: 0;
+    text-align: center;
+  }
+.speaker__occupation{
+    position: absolute;
+    bottom:9%;
+    width:50%;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 0.6875rem;
+    color: #555;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family:'Lato', sans-serif;
+    font-size:1.125rem;
+    margin-top: 0;
+
+  }
+.speaker__modal-link{
+      -webkit-transition: 250ms ease;
+      transition: 250ms ease;
+  }
+.speaker__modal-link:visited{
+    color: black;
+
+  }
+.speaker__modal-link:hover{
+    color: #1088C9;
+  }
