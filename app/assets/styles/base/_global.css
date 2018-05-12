@@ -20,6 +20,29 @@ a{
   text-decoration: none;
 }
 
+#map{
+  display: none;
+
+  @mixin atMedium{
+    display: block;
+    height: 600px;
+    width: 100%;
+  }
+
+  @mixin atLarge{
+    display: block;
+    height: 600px;
+    width: 100%;
+  }
+
+  @mixin atExLarge{
+    display: block;
+    height: 600px;
+    width: 100%;
+  }
+}
+
+
 .grid {
     min-height: 300px;
 

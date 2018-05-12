@@ -74,6 +74,10 @@ var _scheduleTab = __webpack_require__(1);
 
 var _scheduleTab2 = _interopRequireDefault(_scheduleTab);
 
+var _locationMap = __webpack_require__(3);
+
+var _locationMap2 = _interopRequireDefault(_locationMap);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var scheduleTab = new _scheduleTab2.default();
@@ -10393,6 +10397,69 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+window.initMap = function initMap() {
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: 34.0433455,
+      lng: -118.2697967
+    },
+    zoom: 17,
+    styles: [{
+      "featureType": "all",
+      "stylers": [{
+        "saturation": 0
+      }, {
+        "hue": "#e7ecf0"
+      }]
+    }, {
+      "featureType": "road",
+      "stylers": [{
+        "saturation": -70
+      }]
+    }, {
+      "featureType": "transit",
+      "stylers": [{
+        "visibility": "off"
+      }]
+    }, {
+      "featureType": "poi",
+      "stylers": [{
+        "visibility": "off"
+      }]
+    }, {
+      "featureType": "water",
+      "stylers": [{
+        "visibility": "simplified"
+      }, {
+        "saturation": -60
+      }]
+    }]
+
+  });
+
+  var marker = new google.maps.Marker({
+    position: {
+      lat: 34.0433455,
+      lng: -118.2697967
+    },
+    map: map,
+    icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png'
+  });
+};
+
+exports.default = initMap;
 
 /***/ })
 /******/ ]);

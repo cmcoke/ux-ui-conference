@@ -1,0 +1,53 @@
+.location{
+    text-transform: uppercase;
+    font-family:$font-lato;
+    margin-top: 5rem;
+
+    @mixin atMedium{
+      position: relative;
+      margin-top: -5rem;
+    }
+
+    @mixin atLarge{
+      position: relative;
+      margin-top: -8rem;
+    }
+
+    @mixin atExLarge{
+      position: relative;
+      margin-top: -5rem;
+    }
+
+    &__content{
+
+      @mixin atMedium{
+        background: #fff;
+        padding: 20px;
+        position: absolute;
+        bottom:55%;
+      }
+
+      @mixin atLarge{
+        background: #fff;
+        padding: 20px;
+        position: absolute;
+        bottom:55%;
+      }
+
+      @mixin atExLarge{
+        background: #fff;
+        padding: 20px;
+        position: absolute;
+        bottom:55%;
+      }
+
+    }
+
+
+    & span{
+      font-family: $font-archivo;
+    }
+
+
+
+}
