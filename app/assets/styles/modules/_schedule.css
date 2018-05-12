@@ -1,0 +1,113 @@
+.schedule{
+
+    &__day{
+      text-transform: uppercase;
+      font-family: $font-oswald;
+      font-weight: 300;
+    }
+
+    &__date{
+      text-transform: uppercase;
+      font-family: $font-oswald;
+      font-weight: 300;
+    }
+
+    &__time{
+      text-transform: uppercase;
+      font-family: $font-oswald;
+      font-weight: 300;
+    }
+
+    &__title{
+      text-transform: uppercase;
+      font-family: $font-oswald;
+      font-weight: 300;
+    }
+
+    &__speaker{
+      color: #555;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: $font-oswald;
+      font-weight: 300;
+    }
+
+    &__tab-nav{
+      margin:0;
+      padding: 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    &__tab-nav h3{
+      margin-bottom: 0;
+    }
+
+    &__tab-nav p{
+      margin-top:0.5625rem;
+    }
+
+    &__tab-nav li{
+      display: inline-block;
+      margin-bottom:1.375rem;
+
+      @mixin atSmall{
+        margin-right: 2.0625rem;
+        margin-bottom: 1.375rem;
+      }
+
+      @mixin atMedium{
+        margin-right: 1.4375rem;
+        margin-bottom: 3.125rem;
+      }
+
+      @mixin atLarge{
+        margin-right: 2.75rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+      }
+
+      @mixin atExLarge{
+        margin-right: 4.375rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+      }
+
+    }
+
+
+    &__tab-nav a{
+      display: block;
+      padding: 0.1em 1em;
+      border-radius: 3px 3px 0 0;
+      transition: 250ms ease;
+    }
+
+    &__tab-nav a{
+      border-top: 1px solid $blue;
+      color: black;
+    }
+
+    &__tab-nav a:hover{
+      background-color: $blue;
+      color: #fff;
+    }
+
+    &__tab-nav a.current{
+      background-color: $blue;
+      color: #fff;
+    }
+
+    & img{
+      border-radius: 70%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.375rem;
+    }
+
+    & .grid:nth-child(even){
+      background: #F9F9F9;
+      margin-top: 0.6875rem;
+    }
+}
