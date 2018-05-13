@@ -18,4 +18,16 @@
 
   }
 
+  &--subscribe{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    transition: 250ms ease-in;
+  }
+
+  &--subscribe:hover{
+    background: #fff;
+    color: black;
+  }
+
 }
