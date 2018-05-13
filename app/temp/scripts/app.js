@@ -60,86 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _scheduleTab = __webpack_require__(1);
-
-var _scheduleTab2 = _interopRequireDefault(_scheduleTab);
-
-var _locationMap = __webpack_require__(3);
-
-var _locationMap2 = _interopRequireDefault(_locationMap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var scheduleTab = new _scheduleTab2.default();
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(2);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var ScheduleTab = function () {
-  function ScheduleTab() {
-    _classCallCheck(this, ScheduleTab);
-
-    this.ScheduleTab = (0, _jquery2.default)('.schedule__tab');
-    this.ScheduleNav = (0, _jquery2.default)(".schedule__tab-nav");
-    this.events();
-  }
-
-  _createClass(ScheduleTab, [{
-    key: 'events',
-    value: function events() {
-      this.ScheduleTab.hide();
-      this.ScheduleNav.find('a').on('click', function (e) {
-        e.preventDefault();
-        (0, _jquery2.default)('.schedule__tab-nav').find('.current').removeClass('current');
-        (0, _jquery2.default)(this).addClass('current');
-
-        var newTab = (0, _jquery2.default)(this.hash);
-        var newHeight = newTab.height();
-        var container = (0, _jquery2.default)(".schedule__tab-container");
-
-        newTab.siblings(":visible").fadeOut('fast');
-        container.animate({ 'height': newHeight }, 300, function () {
-          newTab.fadeIn('fast');
-        });
-      }).first().click();
-    }
-  }]);
-
-  return ScheduleTab;
-}();
-
-exports.default = ScheduleTab;
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10399,6 +10324,86 @@ return jQuery;
 
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _scheduleTab = __webpack_require__(2);
+
+var _scheduleTab2 = _interopRequireDefault(_scheduleTab);
+
+var _locationMap = __webpack_require__(3);
+
+var _locationMap2 = _interopRequireDefault(_locationMap);
+
+var _currentTicket = __webpack_require__(4);
+
+var _currentTicket2 = _interopRequireDefault(_currentTicket);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var scheduleTab = new _scheduleTab2.default();
+var currentTicket = new _currentTicket2.default();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ScheduleTab = function () {
+  function ScheduleTab() {
+    _classCallCheck(this, ScheduleTab);
+
+    this.ScheduleTab = (0, _jquery2.default)('.schedule__tab');
+    this.ScheduleNav = (0, _jquery2.default)(".schedule__tab-nav");
+    this.events();
+  }
+
+  _createClass(ScheduleTab, [{
+    key: 'events',
+    value: function events() {
+      this.ScheduleTab.hide();
+      this.ScheduleNav.find('a').on('click', function (e) {
+        e.preventDefault();
+        (0, _jquery2.default)('.schedule__tab-nav').find('.current').removeClass('current');
+        (0, _jquery2.default)(this).addClass('current');
+
+        var newTab = (0, _jquery2.default)(this.hash);
+        var newHeight = newTab.height();
+        var container = (0, _jquery2.default)(".schedule__tab-container");
+
+        newTab.siblings(":visible").fadeOut('fast');
+        container.animate({ 'height': newHeight }, 300, function () {
+          newTab.fadeIn('fast');
+        });
+      }).first().click();
+    }
+  }]);
+
+  return ScheduleTab;
+}();
+
+exports.default = ScheduleTab;
+
+/***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10460,6 +10465,49 @@ window.initMap = function initMap() {
 };
 
 exports.default = initMap;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ticket = function () {
+  function ticket() {
+    _classCallCheck(this, ticket);
+
+    this.events();
+  }
+
+  _createClass(ticket, [{
+    key: 'events',
+    value: function events() {
+      (0, _jquery2.default)('.ticket').click(function () {
+        (0, _jquery2.default)('.ticket').removeClass('ticket--active');
+        (0, _jquery2.default)(this).addClass('ticket--active');
+      }).first().click();
+    }
+  }]);
+
+  return ticket;
+}();
+
+exports.default = ticket;
 
 /***/ })
 /******/ ]);

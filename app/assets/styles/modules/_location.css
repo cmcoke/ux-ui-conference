@@ -22,21 +22,21 @@
 
       @mixin atMedium{
         background: #fff;
-        padding: 20px;
+        padding: 1.25rem;
         position: absolute;
         bottom:55%;
       }
 
       @mixin atLarge{
         background: #fff;
-        padding: 20px;
+        padding: 1.25rem;
         position: absolute;
         bottom:55%;
       }
 
       @mixin atExLarge{
         background: #fff;
-        padding: 20px;
+        padding: 1.25rem;
         position: absolute;
         bottom:55%;
       }

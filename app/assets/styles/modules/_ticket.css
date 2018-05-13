@@ -1,0 +1,68 @@
+.ticket{
+  margin-top: 1rem;
+  text-align: center;
+  border: 1px solid #F4F2F2;
+  padding: 3rem;
+  transition: 250ms ease-in;
+
+  @mixin atMedium{
+    padding: 4rem 0.875rem;
+  }
+
+  @mixin atExLarge{
+    padding: 13rem 1rem;
+  }
+
+  &__seat{
+    text-transform: uppercase;
+    font-family: $font-archivo;
+    font-size: 1.375rem;
+  }
+
+  &__price{
+  font-family: $font-roboto;
+  }
+
+  &__dollar-sign{
+    font-size: 1.375rem;
+  }
+
+  &__info{
+    font-family: $font-roboto;
+    line-height: 1.65;
+  }
+
+
+  &:hover{
+    background: $blue;
+    color: #fff;
+  }
+
+  &:hover a{
+    background: $yellow;
+    border: 1px solid $yellow;
+    color: #fff;
+  }
+
+  &:hover p{
+    color: #fff;
+  }
+
+  &--active{
+    background: $blue;
+    color: #fff;
+  }
+
+  &--active a{
+    background: $yellow;
+    border: 1px solid $yellow;
+    color: #fff;
+  }
+
+  &--active p{
+  color: #fff;
+  }
+
+
+
+}

@@ -1775,21 +1775,21 @@ a{
 @media(min-width:768px) and (max-width: 991px){
 #map{
     display: block;
-    height: 600px;
+    height: 37.5rem;
     width: 100%
 }
   }
 @media(min-width:992px) and (max-width: 1280px){
 #map{
     display: block;
-    height: 600px;
+    height: 37.5rem;
     width: 100%
 }
   }
 @media(min-width:1281px){
 #map{
     display: block;
-    height: 600px;
+    height: 37.5rem;
     width: 100%
 }
   }
@@ -1825,9 +1825,10 @@ a{
   }
 .heading{
   text-transform: uppercase;
-  color: #0D0D0D;
   font-family: 'Archivo Black', sans-serif;
   margin-top: 0px;
+
+
 }
 .heading--small{
     color: #6F6F6F;
@@ -1837,6 +1838,9 @@ a{
 .heading--about{
     text-align: center;
   }
+.heading--ticket{
+    text-align: center;
+  }
 .heading--footer{
     font-size: 1rem;
   }
@@ -1844,6 +1848,7 @@ a{
   font-family: 'Roboto', sans-serif;
   color:#555;
   line-height: 1.65;
+
 
 }
 .generic-content--about{
@@ -2064,7 +2069,7 @@ a{
     }
 .schedule__speaker{
       color: #555;
-      font-size: 12px;
+      font-size: 0.75rem;
       text-transform: uppercase;
       font-family: 'Oswald', sans-serif;
       font-weight: 300;
@@ -2184,7 +2189,7 @@ a{
 @media(min-width:768px) and (max-width: 991px){
 .location__content{
         background: #fff;
-        padding: 20px;
+        padding: 1.25rem;
         position: absolute;
         bottom:55%
 
@@ -2193,7 +2198,7 @@ a{
 @media(min-width:992px) and (max-width: 1280px){
 .location__content{
         background: #fff;
-        padding: 20px;
+        padding: 1.25rem;
         position: absolute;
         bottom:55%
 
@@ -2202,7 +2207,7 @@ a{
 @media(min-width:1281px){
 .location__content{
         background: #fff;
-        padding: 20px;
+        padding: 1.25rem;
         position: absolute;
         bottom:55%
 
@@ -2211,3 +2216,91 @@ a{
 .location span{
       font-family: 'Archivo Black', sans-serif;
     }
+.ticket{
+  margin-top: 1rem;
+  text-align: center;
+  border: 1px solid #F4F2F2;
+  padding: 3rem;
+  -webkit-transition: 250ms ease-in;
+  transition: 250ms ease-in;
+
+
+
+}
+@media(min-width:768px) and (max-width: 991px){
+.ticket{
+    padding: 4rem 0.875rem
+
+
+
+}
+  }
+@media(min-width:1281px){
+.ticket{
+    padding: 13rem 1rem
+
+
+
+}
+  }
+.ticket__seat{
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.375rem;
+  }
+.ticket__price{
+  font-family: 'Roboto', sans-serif;
+  }
+.ticket__dollar-sign{
+    font-size: 1.375rem;
+  }
+.ticket__info{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.65;
+  }
+.ticket:hover{
+    background: #1088C9;
+    color: #fff;
+  }
+.ticket:hover a{
+    background: #E6D60C;
+    border: 1px solid #E6D60C;
+    color: #fff;
+  }
+.ticket:hover p{
+    color: #fff;
+  }
+.ticket--active{
+    background: #1088C9;
+    color: #fff;
+  }
+.ticket--active a{
+    background: #E6D60C;
+    border: 1px solid #E6D60C;
+    color: #fff;
+  }
+.ticket--active p{
+  color: #fff;
+  }
+.btn{
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: black;
+
+}
+.btn--ticket{
+    display: inline-block;
+    margin-top: 1.375rem;
+    padding: .75rem 1.2rem;
+    border: 1px solid #AAAAAA;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+
+  }
+@media(min-width:1281px){
+.btn--ticket{
+      margin-top: 2.5rem
+
+  }
+  }

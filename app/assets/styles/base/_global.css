@@ -25,19 +25,19 @@ a{
 
   @mixin atMedium{
     display: block;
-    height: 600px;
+    height: 37.5rem;
     width: 100%;
   }
 
   @mixin atLarge{
     display: block;
-    height: 600px;
+    height: 37.5rem;
     width: 100%;
   }
 
   @mixin atExLarge{
     display: block;
-    height: 600px;
+    height: 37.5rem;
     width: 100%;
   }
 }

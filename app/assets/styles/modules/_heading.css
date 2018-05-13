@@ -1,6 +1,5 @@
 .heading{
   text-transform: uppercase;
-  color: $black;
   font-family: $font-archivo;
   margin-top: 0px;
 
@@ -14,7 +13,13 @@
     text-align: center;
   }
 
+  &--ticket{
+    text-align: center;
+  }
+
   &--footer{
     font-size: 1rem;
   }
+
+
 }
