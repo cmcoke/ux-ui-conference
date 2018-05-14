@@ -1,0 +1,113 @@
+.site-nav{
+  position: fixed;
+  top:-1em;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform ease-in 250ms;
+
+  @mixin atLarge{
+    position: static;
+    transform: none;
+    margin-top: -2rem;
+  }
+
+  @mixin atExLarge{
+    position: static;
+    transform: none;
+    margin-top: -2rem;
+  }
+
+  ul{
+    background-color: #000;
+    padding: 0.9375rem;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+
+    @mixin atLarge{
+      background-color: inherit;
+      padding: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      height: auto;
+    }
+
+    @mixin atExLarge{
+      background-color: inherit;
+      padding: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      height: auto;
+    }
+  }
+
+  li{
+    flex: 1 1 auto;
+    border-bottom: 1px solid #333;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    @mixin atLarge{
+      flex: none;
+      border-bottom:none;
+      justify-content: flex-end;
+      margin-left: 3.75rem;
+    }
+
+    @mixin atExLarge{
+      flex: none;
+      border-bottom:none;
+      justify-content: flex-end;
+      margin-left: 3.75rem;
+    }
+
+  }
+
+  a{
+    color:#fff;
+    font-family: $font-lato;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    flex-basis: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms ease;
+
+    @mixin atLarge{
+      font-size: 0.9375rem;
+      flex-basis: none;
+
+      &.is-current-link{
+        color: $yellow;
+      }
+
+    }
+
+    @mixin atExLarge{
+      font-size: 0.9375rem;
+      flex-basis: none;
+
+      &.is-current-link{
+        color: $yellow;
+      }
+
+    }
+
+  }
+
+  a:hover{
+    color: $yellow;
+  }
+
+  &--is-open{
+      transform: translateX(0);
+  }
+
+}

@@ -1,0 +1,33 @@
+.site-header{
+  position: fixed;
+  z-index: 1;
+  background-color: rgba($black, .7);
+  width: 100%;
+
+  @mixin atLarge{
+    background-color: rgba($black, .5);
+
+    &--dark{
+        background-color: rgba($black, .7);
+    }
+
+  }
+
+  @mixin atExLarge{
+    background-color: rgba($black, .5);
+
+    &--dark{
+        background-color: rgba($black, .7);
+    }
+
+  }
+
+  &__logo{
+    color: #fff;
+    font-family: $font-oswald;
+    font-weight: 300;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+  }
+
+}

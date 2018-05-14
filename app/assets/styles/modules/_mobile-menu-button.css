@@ -1,0 +1,57 @@
+.mobile-menu-button{
+  display: block;
+  padding: 1em;
+  position: fixed;
+  top: 0.6em;
+  right: 0;
+  z-index: 3;
+  cursor: pointer;
+
+  @mixin atLarge{
+    display: none;
+  }
+
+  @mixin atExLarge{
+    display: none;
+  }
+
+  &__hamburger, &__hamburger::before, &__hamburger::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 3px;
+    background: $blue;
+    transition: all ease-in-out 250ms;
+
+    @mixin atLarge{
+      display: none;
+    }
+
+    @mixin atExLarge{
+      display: none;
+    }
+  }
+
+  &__hamburger::before{
+    transform: translateY(-6px);
+  }
+
+  &__hamburger::after{
+    transform: translateY(3px);
+  }
+
+  &__hamburger.site-nav--is-open{
+    transform: rotate(45deg);
+
+    &::after{
+      transform: rotate(-90deg);
+    }
+
+    &::before{
+      display: none;
+    }
+  }
+
+
+
+}

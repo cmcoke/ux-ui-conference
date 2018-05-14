@@ -2364,3 +2364,265 @@ a{
       margin-top: 2rem
   }
   }
+.site-header{
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(13,13,13, .7);
+  width: 100%;
+
+}
+@media(min-width:992px) and (max-width: 1280px){
+.site-header{
+    background-color: rgba(13,13,13, .5)
+
+}
+
+    .site-header--dark{
+        background-color: rgba(13,13,13, .7);
+    }
+  }
+@media(min-width:1281px){
+.site-header{
+    background-color: rgba(13,13,13, .5)
+
+}
+
+    .site-header--dark{
+        background-color: rgba(13,13,13, .7);
+    }
+  }
+.site-header__logo{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+  }
+.site-nav{
+  position: fixed;
+  top:-1em;
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform ease-in 250ms;
+  transition: -webkit-transform ease-in 250ms;
+  transition: transform ease-in 250ms;
+  transition: transform ease-in 250ms, -webkit-transform ease-in 250ms;
+
+}
+@media(min-width:992px) and (max-width: 1280px){
+.site-nav{
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin-top: -2rem
+
+}
+  }
+@media(min-width:1281px){
+.site-nav{
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin-top: -2rem
+
+}
+  }
+.site-nav ul{
+    background-color: #000;
+    padding: 0.9375rem;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100vh;
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.site-nav ul{
+      background-color: inherit;
+      padding: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      height: auto
+  }
+  }
+@media(min-width:1281px){
+.site-nav ul{
+      background-color: inherit;
+      padding: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      height: auto
+  }
+  }
+.site-nav li{
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    border-bottom: 1px solid #333;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.site-nav li{
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      border-bottom:none;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-left: 3.75rem
+
+  }
+  }
+@media(min-width:1281px){
+.site-nav li{
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      border-bottom:none;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-left: 3.75rem
+
+  }
+  }
+.site-nav a{
+    color:#fff;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 250ms ease;
+    transition: 250ms ease;
+
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.site-nav a{
+      font-size: 0.9375rem;
+      -ms-flex-preferred-size: none;
+          flex-basis: none
+
+  }
+
+      .site-nav a.is-current-link{
+        color: #E6D60C;
+      }
+  }
+@media(min-width:1281px){
+.site-nav a{
+      font-size: 0.9375rem;
+      -ms-flex-preferred-size: none;
+          flex-basis: none
+
+  }
+
+      .site-nav a.is-current-link{
+        color: #E6D60C;
+      }
+  }
+.site-nav a:hover{
+    color: #E6D60C;
+  }
+.site-nav--is-open{
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+  }
+.mobile-menu-button{
+  display: block;
+  padding: 1em;
+  position: fixed;
+  top: 0.6em;
+  right: 0;
+  z-index: 3;
+  cursor: pointer;
+
+
+
+}
+@media(min-width:992px) and (max-width: 1280px){
+.mobile-menu-button{
+    display: none
+
+
+
+}
+  }
+@media(min-width:1281px){
+.mobile-menu-button{
+    display: none
+
+
+
+}
+  }
+.mobile-menu-button__hamburger, .mobile-menu-button__hamburger::before, .mobile-menu-button__hamburger::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 3px;
+    background: #1088C9;
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.mobile-menu-button__hamburger, .mobile-menu-button__hamburger::before, .mobile-menu-button__hamburger::after{
+      display: none
+  }
+  }
+@media(min-width:1281px){
+.mobile-menu-button__hamburger, .mobile-menu-button__hamburger::before, .mobile-menu-button__hamburger::after{
+      display: none
+  }
+  }
+.mobile-menu-button__hamburger::before{
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+.mobile-menu-button__hamburger::after{
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+.mobile-menu-button__hamburger.site-nav--is-open{
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+.mobile-menu-button__hamburger.site-nav--is-open::after{
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+    }
+.mobile-menu-button__hamburger.site-nav--is-open::before{
+      display: none;
+    }

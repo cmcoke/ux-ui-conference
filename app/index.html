@@ -17,12 +17,10 @@
 
     <div class="container">
 
-      <div class="site-header__logo">
-        <h1>Designers United</h1>
-      </div>
+      <h1 class="site-header__logo">Designers United</h1>
 
-      <nav>
-        <ul class="site-nav">
+      <nav class="site-nav">
+        <ul>
           <li><a href="#home" id="home-link">Home</a></li>
           <li><a href="#about" id="about-link">About</a></li>
           <li><a href="#speaker" id="speaker-link">Speakers</a></li>
@@ -44,7 +42,7 @@
 
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero " id="home" data-matching-link="#home-link">
 
     <picture>
       <source srcset="assets/images/hero--desktop.jpg 1920w, assets/images/hero--desktop-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
@@ -67,16 +65,16 @@
 
 
   <!-- About -->
-  <section class="page-section">
+  <section class="page-section " id="about" data-matching-link="#about-link">
     <div class="container">
       <div class="grid">
         <div class="col-xs-12 col-sm-12 col-md-4">
           <picture>
-            <source srcset="assets/images/about--desktop.png" media="(min-width: 1380px)">
-            <source srcset="assets/images/about--tablet-landscape.png 550w" media="(min-width: 1024px)">
-            <source srcset="assets/images/about--tablet-portrait.png 550w " media="(min-width: 768px)">
-            <source src="assets/images/about--mobile-landscape.png 600w" media="(min-width: 640px)">
-            <img src="assets/images/about--mobile-portrait.png" alt="come and join us message" class="flex-img about__img">
+            <source data-srcset="assets/images/about--desktop.png" media="(min-width: 1380px)">
+            <source data-srcset="assets/images/about--tablet-landscape.png 550w" media="(min-width: 1024px)">
+            <source data-srcset="assets/images/about--tablet-portrait.png 550w " media="(min-width: 768px)">
+            <source data-srcset="assets/images/about--mobile-landscape.png 600w" media="(min-width: 640px)">
+            <img data-srcset="assets/images/about--mobile-portrait.png" alt="come and join us message" class="flex-img about__img lazyload">
           </picture>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8">
@@ -97,7 +95,7 @@
 
 
   <!-- Guest Speakers -->
-  <section class="page-section speaker__background-image">
+  <section class="page-section speaker__background-image " id="speaker" data-matching-link="#speaker-link">
     <div class="container">
       <h3 class="heading heading--small">Guest</h3>
       <h1 class="heading">Speakers</h1>
@@ -107,11 +105,11 @@
           <a href="#" class="speaker__modal-link">
             <div class="speaker">
               <picture>
-                <source srcset="assets/images/speaker-1--desktop.jpg 500w" media="(min-width: 1380px)">
-                <source srcset="assets/images/speaker-1--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
-                <source srcset="assets/images/speaker-1--tablet--portrait.jpg 500w" media="(min-width: 768px)">
-                <source srcset="assets/images/speaker-1--mobile--landscape.jpg 600w" media="(min-width: 640px)">
-                <img class="lazyload flex-img speaker__img" src="assets/images/speaker-1--mobile-portrait.jpg" alt="profile picture of a speaker">
+                <source data-srcset="assets/images/speaker-1--desktop.jpg 500w" media="(min-width: 1380px)">
+                <source data-srcset="assets/images/speaker-1--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                <source data-srcset="assets/images/speaker-1--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+                <source data-srcset="assets/images/speaker-1--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+                <img class="lazyload flex-img speaker__img" data-srcset="assets/images/speaker-1--mobile-portrait.jpg" alt="profile picture of a speaker">
               </picture>
 
               <div class="speaker__info">
@@ -126,11 +124,11 @@
           <a href="" class="speaker__modal-link">
             <div class="speaker">
               <picture>
-                <source srcset="assets/images/speaker-2--desktop.jpg 500w" media="(min-width: 1380px)">
-                <source srcset="assets/images/speaker-2--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
-                <source srcset="assets/images/speaker-2--tablet--portrait.jpg 500w" media="(min-width: 768px)">
-                <source srcset="assets/images/speaker-2--mobile--landscape.jpg 600w" media="(min-width: 640px)">
-                <img class="lazyload flex-img" src="assets/images/speaker-2--mobile-portrait.jpg" alt="profile picture of a speaker">
+                <source data-srcset="assets/images/speaker-2--desktop.jpg 500w" media="(min-width: 1380px)">
+                <source data-srcset="assets/images/speaker-2--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                <source data-srcset="assets/images/speaker-2--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+                <source data-srcset="assets/images/speaker-2--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+                <img class="lazyload flex-img" data-srcset="assets/images/speaker-2--mobile-portrait.jpg" alt="profile picture of a speaker">
               </picture>
               <div class="speaker__info">
                 <h3 class="speaker__name">Rose Cummings</h3>
@@ -144,11 +142,11 @@
           <a href="" class="speaker__modal-link">
             <div class="speaker">
               <picture>
-                <source srcset="assets/images/speaker-3--desktop.jpg 500w" media="(min-width: 1380px)">
-                <source srcset="assets/images/speaker-3--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
-                <source srcset="assets/images/speaker-3--tablet--portrait.jpg 500w" media="(min-width: 768px)">
-                <source srcset="assets/images/speaker-3--mobile--landscape.jpg 600w" media="(min-width: 640px)">
-                <img class="lazyload flex-img" src="assets/images/speaker-3--mobile-portrait.jpg" alt="profile picture of a speaker">
+                <source data-srcset="assets/images/speaker-3--desktop.jpg 500w" media="(min-width: 1380px)">
+                <source data-srcset="assets/images/speaker-3--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                <source data-srcset="assets/images/speaker-3--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+                <source data-srcset="assets/images/speaker-3--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+                <img class="lazyload flex-img" data-srcset="assets/images/speaker-3--mobile-portrait.jpg" alt="profile picture of a speaker">
               </picture>
               <div class="speaker__info">
                 <h3 class="speaker__name">David Smith</h3>
@@ -162,11 +160,11 @@
           <a href="" class="speaker__modal-link">
             <div class="speaker">
               <picture>
-                <source srcset="assets/images/speaker-4--desktop.jpg 500w" media="(min-width: 1380px)">
-                <source srcset="assets/images/speaker-4--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
-                <source srcset="assets/images/speaker-4--tablet--portrait.jpg 500w" media="(min-width: 768px)">
-                <source srcset="assets/images/speaker-4--mobile--landscape.jpg 600w" media="(min-width: 640px)">
-                <img class="lazyload flex-img" src="assets/images/speaker-4--mobile-portrait.jpg" alt="profile picture of a speaker">
+                <source data-srcset="assets/images/speaker-4--desktop.jpg 500w" media="(min-width: 1380px)">
+                <source data-srcset="assets/images/speaker-4--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                <source data-srcset="assets/images/speaker-4--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+                <source data-srcset="assets/images/speaker-4--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+                <img class="lazyload flex-img" data-srcset="assets/images/speaker-4--mobile-portrait.jpg" alt="profile picture of a speaker">
               </picture>
               <div class="speaker__info">
                 <h3 class="speaker__name">Isabel Hammond</h3>
@@ -180,11 +178,11 @@
           <a href="" class="speaker__modal-link">
             <div class="speaker">
               <picture>
-                <source srcset="assets/images/speaker-5--desktop.jpg 500w" media="(min-width: 1380px)">
-                <source srcset="assets/images/speaker-5--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
-                <source srcset="assets/images/speaker-5--tablet--portrait.jpg 500w" media="(min-width: 768px)">
-                <source srcset="assets/images/speaker-5--mobile--landscape.jpg 600w" media="(min-width: 640px)">
-                <img class="lazyload flex-img" src="assets/images/speaker-5--mobile-portrait.jpg" alt="profile picture of a speaker">
+                <source data-srcset="assets/images/speaker-5--desktop.jpg 500w" media="(min-width: 1380px)">
+                <source data-srcset="assets/images/speaker-5--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                <source data-srcset="assets/images/speaker-5--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+                <source data-srcset="assets/images/speaker-5--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+                <img class="lazyload flex-img" data-srcset="assets/images/speaker-5--mobile-portrait.jpg" alt="profile picture of a speaker">
               </picture>
               <div class="speaker__info">
                 <h3 class="speaker__name">Robert Kelly</h3>
@@ -198,11 +196,11 @@
           <a href="" class="speaker__modal-link">
             <div class="speaker">
               <picture>
-                <source srcset="assets/images/speaker-6--desktop.jpg 500w" media="(min-width: 1380px)">
-                <source srcset="assets/images/speaker-6--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
-                <source srcset="assets/images/speaker-6--tablet--portrait.jpg 500w" media="(min-width: 768px)">
-                <source srcset="assets/images/speaker-6--mobile--landscape.jpg 600w" media="(min-width: 640px)">
-                <img class="lazyload flex-img" src="assets/images/speaker-6--mobile-portrait.jpg" alt="profile picture of a speaker">
+                <source data-srcset="assets/images/speaker-6--desktop.jpg 500w" media="(min-width: 1380px)">
+                <source data-srcset="assets/images/speaker-6--tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                <source data-srcset="assets/images/speaker-6--tablet--portrait.jpg 500w" media="(min-width: 768px)">
+                <source data-srcset="assets/images/speaker-6--mobile--landscape.jpg 600w" media="(min-width: 640px)">
+                <img class="lazyload flex-img" data-srcset="assets/images/speaker-6--mobile-portrait.jpg" alt="profile picture of a speaker">
               </picture>
               <div class="speaker__info">
                 <h3 class="speaker__name">Kara Bowen</h3>
@@ -218,7 +216,7 @@
   <!-- Guest Speakers Modal -->
 
   <!-- Schedule -->
-  <section class="page-section schedule">
+  <section class="page-section schedule " id="schedule" data-matching-link="#schedule-link">
 
     <div class="container">
 
@@ -229,7 +227,7 @@
       <ul class="schedule__tab-nav">
 
         <li>
-          <a href="#day1" >
+          <a href="#day1">
             <h3 class="schedule__day">Day <span>1</span></h3>
             <p class="schedule__date"><span>13</span> October, 2018</p>
           </a>
@@ -363,7 +361,7 @@
 
           <div class="grid">
             <div class="col-xs-12 col-sm-3 col-md-2">
-              <img  src="assets/images/schedule-6__speaker.jpg" alt="Speaker Rose Cummings">
+              <img src="assets/images/schedule-6__speaker.jpg" alt="Speaker Rose Cummings">
             </div>
             <div class="col-xs-12 col-sm-9 col-md-10">
               <p class="schedule__time">10:30am - 11:30am</p>
@@ -461,7 +459,7 @@
 
           <div class="grid">
             <div class="col-xs-12 col-sm-3 col-md-2">
-              <img  src="assets/images/schedule-4__speaker.jpg" alt="Speaker David Smith">
+              <img src="assets/images/schedule-4__speaker.jpg" alt="Speaker David Smith">
             </div>
             <div class="col-xs-12 col-sm-9 col-md-10">
               <p class="schedule__time">11:30am - 12:30am</p>
@@ -600,7 +598,7 @@
   </section>
 
   <!-- Location -->
-  <section class="page-section location">
+  <section class="page-section location " id="location" data-matching-link="#location-link">
 
     <div class="container">
       <h3 class="heading heading--small">Venue</h3>
@@ -619,7 +617,7 @@
   </section>
 
   <!-- Ticket -->
-  <section class="page-section">
+  <section class="page-section " id="tickets" data-matching-link="#tickets-link">
 
     <div class="container">
       <h2 class="heading heading--ticket">Tickets</h2>
