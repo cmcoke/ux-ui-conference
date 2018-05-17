@@ -33,11 +33,7 @@
 
   &__modal-link{
       transition: 250ms ease;
-  }
-
-  &__modal-link:visited{
-    color: black;
-
+      color: black;
   }
 
   &__modal-link:hover{

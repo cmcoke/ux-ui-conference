@@ -7,5 +7,22 @@
     font-size: 1.0625rem;
   }
 
+  &--modal{
+    font-weight: 300;
+    margin-top: 0.4375rem;
+
+    @mixin atMedium{
+      margin-top: 0.4375rem;
+    }
+
+    @mixin atLarge{
+      margin-top: 0.4375rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: 0.4375rem;
+      font-size: 1.0625rem;
+    }
+  }
 
 }

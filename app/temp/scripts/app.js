@@ -10350,12 +10350,42 @@ var _StickyHeader = __webpack_require__(6);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
+var _Speaker1Modal = __webpack_require__(9);
+
+var _Speaker1Modal2 = _interopRequireDefault(_Speaker1Modal);
+
+var _Speaker2Modal = __webpack_require__(10);
+
+var _Speaker2Modal2 = _interopRequireDefault(_Speaker2Modal);
+
+var _Speaker3Modal = __webpack_require__(11);
+
+var _Speaker3Modal2 = _interopRequireDefault(_Speaker3Modal);
+
+var _Speaker4Modal = __webpack_require__(12);
+
+var _Speaker4Modal2 = _interopRequireDefault(_Speaker4Modal);
+
+var _Speaker5Modal = __webpack_require__(13);
+
+var _Speaker5Modal2 = _interopRequireDefault(_Speaker5Modal);
+
+var _Speaker6Modal = __webpack_require__(14);
+
+var _Speaker6Modal2 = _interopRequireDefault(_Speaker6Modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var scheduleTab = new _scheduleTab2.default();
 var currentTicket = new _currentTicket2.default();
 var mobileMenu = new _MobileMenu2.default();
 var stickyHeader = new _StickyHeader2.default();
+var modal = new _Speaker1Modal2.default();
+var modal2 = new _Speaker2Modal2.default();
+var modal3 = new _Speaker3Modal2.default();
+var modal4 = new _Speaker4Modal2.default();
+var modal5 = new _Speaker5Modal2.default();
+var modal6 = new _Speaker6Modal2.default();
 
 /***/ }),
 /* 2 */
@@ -10605,7 +10635,7 @@ var StickyHeader = function () {
     this.siteHeader = (0, _jquery2.default)('.site-header');
     this.headerTriggerElement = (0, _jquery2.default)('.hero__small-title');
     this.createHeaderWayPoint();
-    this.PageSections = (0, _jquery2.default)('.page-section');
+    this.PageSections = (0, _jquery2.default)('.page-section, .current-section');
     this.headerLinks = (0, _jquery2.default)('.site-nav a');
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
@@ -11805,6 +11835,414 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Speaker1Modal = function () {
+  function Speaker1Modal() {
+    _classCallCheck(this, Speaker1Modal);
+
+    this.openModalButton = (0, _jquery2.default)('.open-modal-1');
+    this.modal = (0, _jquery2.default)('.speaker-1-modal');
+    this.closeModalButton = (0, _jquery2.default)('.speaker-1-modal__close');
+    this.events();
+  }
+
+  _createClass(Speaker1Modal, [{
+    key: 'events',
+    value: function events() {
+      //clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
+
+      //clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      //pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('speaker-1-modal--is-visible');
+      return false;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('speaker-1-modal--is-visible');
+    }
+  }]);
+
+  return Speaker1Modal;
+}();
+
+exports.default = Speaker1Modal;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Speaker2Modal = function () {
+  function Speaker2Modal() {
+    _classCallCheck(this, Speaker2Modal);
+
+    this.openModalButton = (0, _jquery2.default)('.open-modal-2');
+    this.modal = (0, _jquery2.default)('.speaker-2-modal');
+    this.closeModalButton = (0, _jquery2.default)('.speaker-2-modal__close');
+    this.events();
+  }
+
+  _createClass(Speaker2Modal, [{
+    key: 'events',
+    value: function events() {
+      //clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
+
+      //clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      //pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('speaker-2-modal--is-visible');
+      return false;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('speaker-2-modal--is-visible');
+    }
+  }]);
+
+  return Speaker2Modal;
+}();
+
+exports.default = Speaker2Modal;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Speaker3Modal = function () {
+  function Speaker3Modal() {
+    _classCallCheck(this, Speaker3Modal);
+
+    this.openModalButton = (0, _jquery2.default)('.open-modal-3');
+    this.modal = (0, _jquery2.default)('.speaker-3-modal');
+    this.closeModalButton = (0, _jquery2.default)('.speaker-3-modal__close');
+    this.events();
+  }
+
+  _createClass(Speaker3Modal, [{
+    key: 'events',
+    value: function events() {
+      //clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
+
+      //clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      //pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('speaker-3-modal--is-visible');
+      return false;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('speaker-3-modal--is-visible');
+    }
+  }]);
+
+  return Speaker3Modal;
+}();
+
+exports.default = Speaker3Modal;
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Speaker4Modal = function () {
+  function Speaker4Modal() {
+    _classCallCheck(this, Speaker4Modal);
+
+    this.openModalButton = (0, _jquery2.default)('.open-modal-4');
+    this.modal = (0, _jquery2.default)('.speaker-4-modal');
+    this.closeModalButton = (0, _jquery2.default)('.speaker-4-modal__close');
+    this.events();
+  }
+
+  _createClass(Speaker4Modal, [{
+    key: 'events',
+    value: function events() {
+      //clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
+
+      //clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      //pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('speaker-4-modal--is-visible');
+      return false;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('speaker-4-modal--is-visible');
+    }
+  }]);
+
+  return Speaker4Modal;
+}();
+
+exports.default = Speaker4Modal;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Speaker5Modal = function () {
+  function Speaker5Modal() {
+    _classCallCheck(this, Speaker5Modal);
+
+    this.openModalButton = (0, _jquery2.default)('.open-modal-5');
+    this.modal = (0, _jquery2.default)('.speaker-5-modal');
+    this.closeModalButton = (0, _jquery2.default)('.speaker-5-modal__close');
+    this.events();
+  }
+
+  _createClass(Speaker5Modal, [{
+    key: 'events',
+    value: function events() {
+      //clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
+
+      //clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      //pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('speaker-5-modal--is-visible');
+      return false;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('speaker-5-modal--is-visible');
+    }
+  }]);
+
+  return Speaker5Modal;
+}();
+
+exports.default = Speaker5Modal;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Speaker6Modal = function () {
+  function Speaker6Modal() {
+    _classCallCheck(this, Speaker6Modal);
+
+    this.openModalButton = (0, _jquery2.default)('.open-modal-6');
+    this.modal = (0, _jquery2.default)('.speaker-6-modal');
+    this.closeModalButton = (0, _jquery2.default)('.speaker-6-modal__close');
+    this.events();
+  }
+
+  _createClass(Speaker6Modal, [{
+    key: 'events',
+    value: function events() {
+      //clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
+
+      //clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
+
+      //pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('speaker-6-modal--is-visible');
+      return false;
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('speaker-6-modal--is-visible');
+    }
+  }]);
+
+  return Speaker6Modal;
+}();
+
+exports.default = Speaker6Modal;
 
 /***/ })
 /******/ ]);

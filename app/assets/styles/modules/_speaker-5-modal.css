@@ -1,0 +1,142 @@
+.speaker-5-modal{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(255,255,255, .94);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    max-height: 100%;
+    overflow-y: auto;
+
+    &--is-visible{
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    &__inner{
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__speaker-img{
+      position: relative;
+      margin-top: 12rem;
+
+      @mixin atSmall{
+        margin-top: 12rem;
+      }
+
+      @mixin atMedium{
+        margin-top: 9rem;
+      }
+
+      @mixin atLarge{
+        margin-top: 0;
+      }
+
+      @mixin atExLarge{
+        margin-top: 0;
+      }
+    }
+
+    &__speaker-name{
+      position: absolute;
+      bottom:5%;
+      background: #fff;
+      padding: 0.4375rem;
+      text-transform: uppercase;
+      font-family:$font-lato;
+      font-size: 1.0625rem;
+    }
+
+    &__speaker-heading{
+      text-transform: uppercase;
+      font-family:$font-lato;
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-bottom: 0;
+      margin-top:0.125rem;
+
+      @mixin atSmall{
+        font-size: 1.25rem;
+        margin-bottom: 0.625rem;
+      }
+
+      @mixin atMedium{
+        font-size: 1.5625rem;
+        margin-top: 0;
+      }
+
+      @mixin atLarge{
+        font-size: 1.5625rem;
+        margin-top: 0;
+      }
+
+      @mixin atExLarge{
+        font-size: 1.5625rem;
+        margin-top: 0;
+      }
+
+    }
+
+    &__speaker-sub-heading{
+      color: #555;
+      text-transform: uppercase;
+      font-family: $font-roboto;
+      font-weight: 300;
+      font-size: 0.75rem;
+      margin-top: 0.4375rem;
+
+      @mixin atMedium{
+        font-size: 0.9375rem;
+      }
+
+      @mixin atExLarge{
+        font-size: 1.0625rem;
+      }
+    }
+
+    &__close{
+      position: absolute;
+      top: 15px;
+      right: 0.6875rem;
+      font-size: 2rem;
+      transform: scaleX(1.2);
+      transform-origin: 100% 0;
+      color: $blue;
+      cursor: pointer;
+      transition: 250ms ease;
+
+      @mixin atSmall{
+        right:1.125rem;
+        top:0.125rem;
+      }
+
+      @mixin atMedium{
+        right: 1.125rem;
+      }
+
+      @mixin atLarge{
+        right: 1.6875rem;
+      }
+
+      @mixin atExLarge{
+        right: 1.6875rem;
+      }
+
+
+      &:hover{
+        color:crimson;
+      }
+    }
+
+
+}

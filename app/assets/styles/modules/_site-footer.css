@@ -23,7 +23,8 @@
 
     @mixin atExLarge{
       display: inline;
-      margin-left: 1.875rem;
+      margin-right: 2.0625rem;
+      margin-left: 0.75rem;
     }
   }
 
